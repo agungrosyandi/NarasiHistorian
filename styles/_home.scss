@@ -1,0 +1,71 @@
+/* home sections */
+
+#home {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/img/bg\ home.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .home-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: $mainFontSize;
+    padding: 10%;
+    letter-spacing: 0.4rem;
+
+    .title {
+      .cta-home1 {
+        color: rgb(255, 255, 255);
+      }
+    }
+
+    .sub-title {
+      display: flex;
+
+      .cta-home2 {
+        padding-right: 1.5rem;
+      }
+
+      .cta-home1,
+      .cta-home2,
+      .cta-home3 {
+        display: block;
+        font-family: $nelaSlab-font;
+        color: white;
+      }
+    }
+
+    /* button component */
+
+    .cta-button {
+      background: #ffd92b;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      color: $black-color;
+      cursor: pointer;
+      font-family: $nelaSlab-font;
+      transition: background 0.75s ease-out;
+      border-style: solid;
+      border-color: #ffd92b;
+
+      a {
+        color: rgb(59, 58, 58);
+        text-decoration: none;
+        font-size: $buttonFontSize;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
+      }
+
+      &:hover,
+      a:hover {
+        background: none;
+        color: $white-color;
+      }
+    }
+  }
+}

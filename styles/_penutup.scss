@@ -1,0 +1,76 @@
+#penutup {
+  width: 100vw;
+  height: 60vh;
+  background: black;
+  position: relative;
+
+  .penutup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20%;
+  }
+
+  .title-penutup {
+    display: flex;
+    margin-bottom: 2rem;
+    font-size: $mainFontSizeKategori;
+    font-family: $nelaSlab-font;
+    letter-spacing: 0.5rem;
+    color: #ffd92b;
+  }
+
+  .cta1-penutup1 {
+    margin-right: 2rem;
+  }
+
+  .sub-penutup {
+    font-size: $subFontSizeKategori;
+    font-family: $nelaSlabLight-font;
+    letter-spacing: 0.1rem;
+    color: $white-color;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+  }
+
+  .youtube,
+  .instagram {
+    width: 3%;
+    height: 3%;
+    margin: 2.7rem 1rem;
+    cursor: pointer;
+  }
+
+  .youtube {
+    position: relative;
+    width: 4.5%;
+    height: 4.5%;
+    bottom: 0.7rem;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+
+    svg {
+      width: 2%;
+      height: 2%;
+      fill: rgb(255, 255, 255);
+      padding-top: 3rem;
+    }
+
+    p {
+      font-size: calc(0.3rem + 0.5vw);
+      color: white;
+      padding-top: 3rem;
+    }
+  }
+}

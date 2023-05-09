@@ -1,0 +1,305 @@
+/* font used */
+@font-face {
+  font-family: "NelaSlab", sans-serif;
+  src: url(font/NelaSlab\ Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "NelaSlabLight", sans-serif;
+  src: url(font/NelaSlab\ Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "DrukBold", sans-serif;
+  src: url(font/Druk-Bold-Trial.otf) format("truetype");
+}
+@font-face {
+  font-family: "DrukMedium", sans-serif;
+  src: url(font/Druk-Medium-Trial.otf) format("truetype");
+}
+/* default setting */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10vh;
+  padding-right: 10%;
+  padding-left: 10%;
+  background: rgba(30, 24, 24, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  z-index: 20;
+}
+nav .logo {
+  position: relative;
+  left: 5%;
+  width: 7rem;
+  height: 7rem;
+  transform: scale(300%);
+}
+nav .menu-navbar {
+  list-style-type: none;
+}
+nav .menu-navbar li {
+  display: inline-block;
+  padding: 0 1rem;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.1rem;
+}
+nav .menu-navbar li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: calc(0.3rem + 1vw);
+  font-weight: bold;
+}
+nav .menu-navbar li a:hover {
+  color: rgb(225, 225, 72);
+}
+
+/* home sections */
+#home {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/img/bg\ home.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#home .home-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: calc(4.5rem + 1vw);
+  padding: 10%;
+  letter-spacing: 0.4rem;
+  /* button component */
+}
+#home .home-container .title .cta-home1 {
+  color: rgb(255, 255, 255);
+}
+#home .home-container .sub-title {
+  display: flex;
+}
+#home .home-container .sub-title .cta-home2 {
+  padding-right: 1.5rem;
+}
+#home .home-container .sub-title .cta-home1,
+#home .home-container .sub-title .cta-home2,
+#home .home-container .sub-title .cta-home3 {
+  display: block;
+  font-family: "NelaSlab", sans-serif;
+  color: white;
+}
+#home .home-container .cta-button {
+  background: #ffd92b;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  color: #000000;
+  cursor: pointer;
+  font-family: "NelaSlab", sans-serif;
+  transition: background 0.75s ease-out;
+  border-style: solid;
+  border-color: #ffd92b;
+}
+#home .home-container .cta-button a {
+  color: rgb(59, 58, 58);
+  text-decoration: none;
+  font-size: calc(0.6rem + 0.5vw);
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+#home .home-container .cta-button:hover,
+#home .home-container .cta-button a:hover {
+  background: none;
+  color: #ffffff;
+}
+
+/* about sections */
+#about {
+  width: 100vw;
+  height: 120vh;
+}
+#about .about-container {
+  position: relative;
+}
+#about .about-container .quotes-quotes {
+  display: flex;
+  width: 100%;
+  flex: 1;
+}
+#about .about-container .quotes-quotes .quotes1,
+#about .about-container .quotes-quotes .quotes2,
+#about .about-container .quotes-quotes .quotes3 {
+  width: 50%;
+  padding: 5%;
+  font-family: "NelaSlabLight", sans-serif;
+  font-size: calc(0.7rem + 0.5vw);
+}
+#about .about-container .quotes-quotes .quotes1 h2,
+#about .about-container .quotes-quotes .quotes2 h2,
+#about .about-container .quotes-quotes .quotes3 h2 {
+  padding: 3rem 0 0 2rem;
+  font-family: "NelaSlabLight", sans-serif;
+  font-size: calc(1rem + 1vw);
+}
+#about .about-container .quotes-quotes .quotes1 h2,
+#about .about-container .quotes-quotes .quotes3 h2 {
+  position: relative;
+}
+#about .about-container img {
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* kategori sections */
+#kategori {
+  width: 100vw;
+  height: 120vh;
+  padding: 5%;
+  position: relative;
+}
+#kategori .title1 {
+  display: flex;
+  font-size: calc(1rem + 1vw);
+  justify-content: center;
+}
+#kategori .cta1-title1,
+#kategori .cta2-title2 {
+  display: block;
+  padding: 0 0.5rem;
+  font-family: "NelaSlab", sans-serif;
+  letter-spacing: 0.3rem;
+  text-shadow: rgba(205, 177, 177, 0.4) 0px 0px 20px;
+  font-size: calc(5.8rem + 1vw);
+}
+#kategori .sub-title1 {
+  display: flex;
+  justify-content: center;
+  font-family: "NelaSlabLight", sans-serif;
+  letter-spacing: 0.4rem;
+  padding: 2rem 0 5rem 0;
+  font-size: calc(0.6rem + 0.5vw);
+}
+#kategori .galery-kategori {
+  position: relative;
+  display: flex;
+  width: 90vw;
+  height: 60vh;
+}
+#kategori .kategori {
+  flex: 1;
+}
+#kategori .kategori img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0 5% 0 0;
+}
+#kategori .kategori .description1,
+#kategori .kategori .description2,
+#kategori .kategori .description3 {
+  position: absolute;
+  top: 40%;
+  width: 30%;
+  padding: 2rem;
+  color: white;
+  font-size: calc(1rem + 1vw);
+}
+#kategori .kategori .description1 p,
+#kategori .kategori .description2 p,
+#kategori .kategori .description3 p {
+  padding: 1rem 0 0 0;
+  font-family: "NelaSlabLight", sans-serif;
+  line-height: 2rem;
+  font-size: calc(0.7rem + 0.5vw);
+}
+
+#penutup {
+  width: 100vw;
+  height: 60vh;
+  background: black;
+  position: relative;
+}
+#penutup .penutup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 20%;
+}
+#penutup .title-penutup {
+  display: flex;
+  margin-bottom: 2rem;
+  font-size: calc(5.8rem + 1vw);
+  font-family: "NelaSlab", sans-serif;
+  letter-spacing: 0.5rem;
+  color: #ffd92b;
+}
+#penutup .cta1-penutup1 {
+  margin-right: 2rem;
+}
+#penutup .sub-penutup {
+  font-size: calc(0.6rem + 0.5vw);
+  font-family: "NelaSlabLight", sans-serif;
+  letter-spacing: 0.1rem;
+  color: #ffffff;
+}
+#penutup .social-media {
+  display: flex;
+  justify-content: center;
+}
+#penutup .youtube,
+#penutup .instagram {
+  width: 3%;
+  height: 3%;
+  margin: 2.7rem 1rem;
+  cursor: pointer;
+}
+#penutup .youtube {
+  position: relative;
+  width: 4.5%;
+  height: 4.5%;
+  bottom: 0.7rem;
+}
+#penutup .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 100%;
+}
+#penutup .footer svg {
+  width: 2%;
+  height: 2%;
+  fill: rgb(255, 255, 255);
+  padding-top: 3rem;
+}
+#penutup .footer p {
+  font-size: calc(0.3rem + 0.5vw);
+  color: white;
+  padding-top: 3rem;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,46 @@
+/* about sections */
+
+#about {
+  width: 100vw;
+  height: 120vh;
+
+  .about-container {
+    position: relative;
+
+    .quotes-quotes {
+      display: flex;
+      width: 100%;
+      flex: 1;
+
+      .quotes1,
+      .quotes2,
+      .quotes3 {
+        width: 50%;
+        padding: 5%;
+        font-family: $nelaSlabLight-font;
+        font-size: $descriptionParagraphFontSize;
+
+        h2 {
+          padding: 3rem 0 0 2rem;
+          font-family: $nelaSlabLight-font;
+          font-size: $descriptionTitleFontSize;
+        }
+      }
+
+      .quotes1,
+      .quotes3 {
+        h2 {
+          position: relative;
+          // top: 17%;
+        }
+      }
+    }
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 80vh;
+      object-fit: cover;
+    }
+  }
+}

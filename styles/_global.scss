@@ -1,0 +1,72 @@
+/* font used */
+
+@font-face {
+  font-family: "NelaSlab", sans-serif;
+  src: url(font/NelaSlab\ Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "NelaSlabLight", sans-serif;
+  src: url(font/NelaSlab\ Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "DrukBold", sans-serif;
+  src: url(font/Druk-Bold-Trial.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "DrukMedium", sans-serif;
+  src: url(font/Druk-Medium-Trial.otf) format("truetype");
+}
+
+// main color
+
+$black-color: #000000;
+$white-color: #ffffff;
+
+// main font
+
+$poppins-font: "Poppins", sans-serif;
+$montserrat-font: "Montserrat", sans-serif;
+$nelaSlab-font: "NelaSlab", sans-serif;
+$drukBold-font: "DrukBold", sans-serif;
+$nelaSlabLight-font: "NelaSlabLight", sans-serif;
+$drukMedium-font: "DrukMedium", sans-serif;
+$poppins-font: "Poppins", sans-serif;
+$montserrat-Font: "Montserrat", sans-serif;
+
+// font-size
+
+$menuNavFontSize: calc(0.3rem + 1vw);
+$mainFontSize: calc(4.5rem + 1vw);
+$buttonFontSize: calc(0.6rem + 0.5vw);
+
+// about
+
+$descriptionTitleFontSize: calc(1rem + 1vw);
+$descriptionParagraphFontSize: calc(0.7rem + 0.5vw);
+
+// kategori
+
+$mainFontSizeKategori: calc(5.8rem + 1vw);
+$subFontSizeKategori: calc(0.6rem + 0.5vw);
+
+$retroVectorMotionTitleFontSize: calc(2.5rem + 1vw);
+
+/* default setting */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
